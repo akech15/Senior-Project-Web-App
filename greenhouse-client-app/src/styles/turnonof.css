@@ -1,18 +1,13 @@
-
-.checkbox-container{
-	margin-top: 20%;
-	margin-left: 22%;
-}
-p,
-label {
-	font: 1rem 'Fira Sans', sans-serif;
-	font-size: 23px;
-	margin-left: 5%;
-	color: blue;
-
+#trun_on_off_page_name {
+    text-align: center;
 }
 
-input {
-	margin-left:10% ;
-	margin: .4rem;
+#form-control-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
 }
+
+#form-control-wrapper2 {
+}
+

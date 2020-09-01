@@ -51,8 +51,6 @@ export default function Register() {
 		const password = document.getElementById("password").value;
 		const repeatPassword = document.getElementById("repeatPassword").value;
 
-		console.log(greenHouseId, username, password, repeatPassword)
-
 		if (password !== repeatPassword) {
 			console.log("ASD")
 			document.getElementById("id_ra").textContent = 'Passwords do not match'
