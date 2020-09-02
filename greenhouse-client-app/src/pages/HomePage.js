@@ -4,6 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import {makeStyles} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import {useHistory} from 'react-router-dom'
+import Typography from "@material-ui/core/Typography";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -42,21 +43,12 @@ export default function HomePage() {
 	return (
 
 		<Container component="main" maxWidth="xs">
-			<Button
-				type="button"
-				fullWidth
-				variant="contained"
-				color="primary"
-				onClick={() => {
-					localStorage.removeItem('user')
-					history.push('login')
-				}}
-				className={classes.submit}
-			>
-				LOGOUT
-			</Button>
-			<CssBaseline/>
+
 			<div className={classes.paper}>
+				<Typography component="h1" variant="h5" id="trun_on_off_page_name">
+					Green House System
+				</Typography>
+
 				<form className={classes.form} noValidate>
 					<Button
 						type="button"
@@ -91,7 +83,19 @@ export default function HomePage() {
 
 				</form>
 			</div>
-
+			<Button
+				type="button"
+				fullWidth
+				variant="contained"
+				color="primary"
+				onClick={() => {
+					localStorage.removeItem('user')
+					history.push('login')
+				}}
+				className={classes.submit}
+			>
+				LOGOUT
+			</Button>
 		</Container>
 	);
 }

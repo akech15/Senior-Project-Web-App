@@ -1,0 +1,13 @@
+#change_info_page_name {
+    text-align: center;
+}
+
+#change_info_apply {
+    align-self: center;
+}
+
+#change_info_content {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
